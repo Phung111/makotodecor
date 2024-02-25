@@ -7,12 +7,14 @@ import Detail from 'feature/Detail/Detail'
 function App() {
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/detail" element={<Detail />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
+      {/* </BrowserRouter> */}
     </>
   )
 }
