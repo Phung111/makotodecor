@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('./utils/fonts/futirism.css'); */
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-[1400px];
+  }
+
+  .line {
+    @apply h-[0.5px] w-full bg-black/10;
+  }
+
+  .level__1:hover .level__1__drop {
+    @apply flex;
+  }
+  .level__2:hover .level__2__drop {
+    @apply flex;
+  }
+  .level__3:hover .level__3__drop {
+    @apply flex;
+  }
+  .level__4:hover .level__4__drop {
+    @apply flex;
+  }
+
+  .background {
+    background-image: url('assets/images/bg.png');
+    width: '100%';
+    height: '100%';
+    object-fit: cover;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply rounded bg-black/20 p-2 after:text-2xl after:text-white hover:bg-black;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px !important;
+  }
+
+  /* [data-title] {
+    @apply relative;
+  }
+
+  [data-title]::before {
+    @apply invisible absolute left-3/4 top-3/4 whitespace-nowrap rounded border bg-white px-1 py-2 text-xs opacity-0 transition-opacity content-[attr(data-title)] hover:visible hover:opacity-100;
+  } */
 }
