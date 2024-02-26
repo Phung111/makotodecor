@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url('./utils/fonts/futirism.css'); */
+@import url('assets/fonts/fz_dtgame.css');
 
 ::-webkit-scrollbar {
   height: 5px;
@@ -28,6 +28,10 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  p {
+    @apply text-lg;
   }
 }
 
@@ -71,6 +75,10 @@
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 20px !important;
+  }
+
+  .fz_dtgame {
+    font-family: 'fz_dtgame', Arial, Helvetica, sans-serif;
   }
 
   /* [data-title] {

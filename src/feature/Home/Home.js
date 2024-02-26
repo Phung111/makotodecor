@@ -7,7 +7,7 @@ import React, { useEffect } from 'react'
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-5 sm:gap-10">
         <Head />
         <Body />
         <Foot />
