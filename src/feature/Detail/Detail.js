@@ -5,10 +5,10 @@ import Foot from 'components/Foot'
 export default function Detail() {
   return (
     <>
-      <div className="bg-gray py-10">
+      <div className="bg-gray py-10 -sm:px-2">
         <div className="container">
           <div className="flex flex-col gap-10">
-            <div className="bg-white">
+            <div className="bg-white ">
               <Info />
             </div>
             <div className="bg-white">

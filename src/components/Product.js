@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function Product({ type }) {
   let noClass = ''
   let mobile = 'text-[20px] sm:text-[40px] sm:leading-6 leading-3'
-  let computer = 'sm:text-[54px] sm:leading-6 leading-4'
+  let computer = 'text-[28px] sm:text-[54px] sm:leading-6 leading-4'
   type == 'trending' ? (noClass = mobile) : (noClass = computer)
 
   return (
@@ -13,11 +13,11 @@ export default function Product({ type }) {
           <div className="absolute top-0 z-10 w-[60%]">
             <img className="h-full w-full object-contain" src={require(`assets/images/1.png`)} alt="logo" />
           </div>
-          <div className="absolute left-0 top-0 z-20 flex h-2/5 w-1/5 justify-center pb-[5%] pt-[20%]">
+          <div className="absolute left-0 top-0 z-20 flex h-2/5 w-1/5 justify-center pb-[5%] pt-[18%]">
             <div className="absolute top-0 h-full w-full">
               <img className="h-full w-full object-contain" src={require(`assets/images/no.png`)} alt="no" />
             </div>
-            <div className="fz_dtgame z-20 flex  flex-col items-center justify-between">
+            <div className="fz_dtgame z-20 flex flex-col items-center justify-between">
               <p className={noClass}>0</p>
               <p className={noClass}>9</p>
               <p className={noClass}>8</p>

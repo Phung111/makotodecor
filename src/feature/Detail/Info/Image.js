@@ -7,7 +7,7 @@ import 'swiper/css/pagination'
 export default function Image() {
   return (
     <>
-      <div className="flex w-[550px] flex-col gap-3">
+      <div className="flex w-full flex-col gap-3 sm:w-[550px]">
         <img src={require(`assets/images/1.png`)} className="aspect-square w-full object-contain" />
         <Swiper
           style={{
