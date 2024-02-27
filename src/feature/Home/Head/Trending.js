@@ -8,8 +8,8 @@ export default function Trending() {
         <div className="flex h-[150px] w-full items-end justify-center sm:h-[300px]">
           <div className="grid grid-cols-3 gap-8 sm:gap-16">
             {Array.from({ length: 3 }, (_, index) => (
-              <div className="h-[150px] w-[105px] sm:h-[300px] sm:w-[180px]">
-                <Product key={index} type={'trending'} />
+              <div className="h-[150px] w-[105px] sm:h-[300px] sm:w-[180px]" key={index}>
+                <Product type={'trending'} />
               </div>
             ))}
           </div>
