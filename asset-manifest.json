@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/makotodecor/static/css/main.7cee10ae.css",
-    "main.js": "/makotodecor/static/js/main.f203d52c.js",
+    "main.css": "/makotodecor/static/css/main.82d94333.css",
+    "main.js": "/makotodecor/static/js/main.84c84e59.js",
     "static/js/453.7502b5d9.chunk.js": "/makotodecor/static/js/453.7502b5d9.chunk.js",
     "static/media/1.png": "/makotodecor/static/media/1.2b58622bb63357635636.png",
     "static/media/daruma.png": "/makotodecor/static/media/daruma.ff647b27a2440b5fe4bf.png",
+    "static/media/rem.png": "/makotodecor/static/media/rem.00b51b7048dfdc4401b8.png",
     "static/media/bg.png": "/makotodecor/static/media/bg.6dc27fe14ecb4bd5fd51.png",
     "static/media/FZ DTGAME.TTF": "/makotodecor/static/media/FZ DTGAME.462e1457dc319fcff35e.TTF",
     "static/media/no.png": "/makotodecor/static/media/no.a87d64a91029921bb1dc.png",
     "index.html": "/makotodecor/index.html",
-    "main.7cee10ae.css.map": "/makotodecor/static/css/main.7cee10ae.css.map",
-    "main.f203d52c.js.map": "/makotodecor/static/js/main.f203d52c.js.map",
+    "main.82d94333.css.map": "/makotodecor/static/css/main.82d94333.css.map",
+    "main.84c84e59.js.map": "/makotodecor/static/js/main.84c84e59.js.map",
     "453.7502b5d9.chunk.js.map": "/makotodecor/static/js/453.7502b5d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cee10ae.css",
-    "static/js/main.f203d52c.js"
+    "static/css/main.82d94333.css",
+    "static/js/main.84c84e59.js"
   ]
 }
