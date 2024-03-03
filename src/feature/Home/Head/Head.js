@@ -1,16 +1,29 @@
 import BestProduct from 'feature/Home/Head/BestProduct'
 import Trending from 'feature/Home/Head/Trending'
-import Rem from 'components/Rem'
+import SwiperHead from 'feature/Home/Head/SwiperHead'
+import { Link } from 'react-scroll'
 
 export default function Head() {
   return (
     <>
-      <div className="flex w-full flex-col items-end gap-5 sm:relative">
-        <Rem />
-        <div className="left-0 -z-10 flex h-full items-center sm:absolute sm:w-2/3">
-          <img className="w-full object-contain sm:w-[90%]" src={require(`assets/images/bg.png`)} alt="logo" />
+      <div className="flex flex-col items-center gap-5 sm:flex-row">
+        <div className="flex w-full flex-col gap-2 sm:w-1/2">
+          <div className="relative flex w-full items-center justify-center">
+            <img className="absolute w-full -translate-x-2 object-cover" src={require(`assets/images/cucmau.png`)} alt="cucmau" />
+            <div className="flex w-[80%] items-center justify-center px-10">
+              <SwiperHead />
+            </div>
+          </div>
+          <div className="flex flex-col gap-5 sm:px-10">
+            <div className="text-justify">Makoto đem hơi thở trong văn hóa Nhật Bản truyền thống đến không gian sống và làm việc của bạn. Người Nhật rất coi trọng sự hòa hợp giữa con người và thiên nhiên, giữa quá khứ và tương lai, giữa truyền thống và hiện đại. </div>
+            <div className="flex justify-center">
+              <Link to="foot">
+                <button className="w-[200px] rounded-full bg-black p-2 text-white hover:bg-black/70">Thông tin chi tiết</button>
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-10 sm:w-[800px]">
+        <div className="flex w-full flex-col gap-10 sm:w-1/2 sm:px-10">
           <BestProduct />
           <Trending />
         </div>

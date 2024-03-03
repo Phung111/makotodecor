@@ -1,15 +1,11 @@
 export default function Foot() {
   return (
     <>
-      <div className="line" />
-      <div className="-sm:flex-col flex shrink-0 items-center justify-center gap-2 pb-5 text-black/50 sm:gap-10">
-        <p>Liên hệ</p>
-        <div className="flex gap-2 sm:gap-10">
-          <p>
-            Facebook: <a href="https://www.facebook.com/Mon.Pham269">Mon Pham</a>
-          </p>
-          <p>Phone: 0973597827</p>
-        </div>
+      <div id="foot" className=""></div>
+      <div className="relative flex justify-center">
+        <img className="absolute" src={require(`assets/images/b3.png`)} alt="contact" />
+        <img className="absolute -bottom-5 w-full sm:-bottom-10" src={require(`assets/images/nuocden.png`)} alt="nuocden" />
+        <img className="absolute w-1/2" src={require(`assets/images/chufoot.png`)} alt="chufoot" />
       </div>
     </>
   )
