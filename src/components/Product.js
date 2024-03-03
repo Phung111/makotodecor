@@ -16,7 +16,7 @@ export default function Product({ type }) {
   return (
     <>
       <Link to="/detail" className="h-full w-full">
-        <div className="flex h-full w-full flex-col transition hover:scale-[110%]">
+        <div className="flex h-full w-full flex-col sm:transition sm:hover:scale-[110%]">
           <div className="relative h-full bg-color3">
             <div className="absolute top-0 flex h-full w-full items-center justify-center p-3">
               <div className="aspect-square w-full rounded-full bg-color2" />
