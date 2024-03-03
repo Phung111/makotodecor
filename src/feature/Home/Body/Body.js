@@ -1,26 +1,35 @@
-import Product from 'components/Product'
+import Products from 'feature/Home/Body/Products'
+
+const mon = [
+  {
+    id: 1,
+    name: 'mèo thần tài',
+    price: 500000,
+    price: 100000,
+    imgs: [],
+    category: [],
+    colors: [],
+  },
+]
 
 export default function Body() {
   return (
     <>
-      <div className="py-5">
-        <div className="flex justify-center">
-          <h2 className="svn_shikimaru text-2xl">From The Land of the Rising Sun to Your Home</h2>
-        </div>
-        <div className="relative flex h-[1000px] justify-center">
-          <img className="absolute hidden sm:block" src={require(`assets/images/tori.png`)} alt="tori" />
-          <img className="absolute sm:hidden" src={require(`assets/images/torimobi.png`)} alt="torimobi" />
-        </div>
-        <div className="z-10 w-full "></div>
-      </div>
+      <div id="body" className="pt-5">
+        <div className="flex flex-col gap-5">
+          <h2 className="svn_shikimaru text-center text-sm sm:text-2xl">From The Land of the Rising Sun to Your Home</h2>
 
-      {/* {Array.from({ length: 12 }, (_, index) => (
-              <div className="flex justify-center" key={index}>
-                <div className="h-[210px] w-[140px] shrink-0 sm:h-[450px] sm:w-[250px]">
-                  <Product />
-                </div>
+          <div className="relative flex h-[1000px] justify-center">
+            <img className="absolute hidden sm:block" src={require(`assets/images/tori.png`)} alt="tori" />
+            <img className="absolute sm:hidden" src={require(`assets/images/torimobi.png`)} alt="torimobi" />
+            <div className="relative z-10 flex h-full w-full justify-center">
+              <div className="mt-[200px] h-[670px] w-[1200px]">
+                <Products />
               </div>
-            ))} */}
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

@@ -73,6 +73,29 @@
     font-size: 20px !important;
   }
 
+  .swiper-pagination {
+    @apply flex flex-row justify-center;
+  }
+
+  .swiper-pagination-bullet {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 20px !important;
+    width: 20px !important;
+    cursor: pointer !important;
+    background-color: black !important;
+    opacity: 0.2 !important;
+    text-align: center !important;
+    color: white !important;
+    font-size: 10px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff !important;
+    background: #007aff !important;
+  }
+
   .fz_dtgame {
     font-family: 'fz_dtgame', Arial, Helvetica, sans-serif;
   }

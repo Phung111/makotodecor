@@ -13,8 +13,8 @@ module.exports = {
       colors: {
         default: '#fff',
         // primary: '#f53d2d',
-        primary: '#3f97be',
-        primary_dark: '#287DA1',
+        primary: '#a8242d',
+        primary_dark: '#63161B',
         secondary: '#5ed1c9',
         secondary_dark: '#40AEA7',
         neutral: '#fff',
@@ -23,6 +23,7 @@ module.exports = {
         color3: '#ececec',
         color1_dark: '#63161B',
         red: '#f53d2d',
+        red2: '#d00000',
         gray: '#f5f4f4',
         gray2: '#ededed',
         gray3: '#fafafa',

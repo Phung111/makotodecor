@@ -8,15 +8,15 @@ export default function SwiperHead({}) {
   return (
     <>
       <Swiper
-        modules={[Navigation]}
+        modules={[Autoplay, Navigation]}
         navigation={{
           nextEl: '.next_logo',
         }}
-        // autoplay={{
-        //   delay: 2000,
-        //   disableOnInteraction: false,
-        //   pauseOnMouseEnter: true,
-        // }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
         loop={true}
       >
         <SwiperSlide className="flex items-center justify-center">
