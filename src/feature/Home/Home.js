@@ -19,7 +19,6 @@ export default function Home() {
           </div>
         </div>
         <Foot />
-        <div className="h-[1000px]"></div>
       </div>
     </>
   )
