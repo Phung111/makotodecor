@@ -9,18 +9,18 @@ export default function Foot() {
           <div className="absolute h-full w-full">
             <img className="" src={require(`assets/images/b3.png`)} alt="bgfoot" />
             <div className="relative h-10 w-full -translate-y-full sm:h-20">
-              <div className="border-red2 flex h-1/2 items-center justify-end border-b-2 pr-2 sm:pr-20">
+              <div className="flex h-1/2 items-center justify-end border-b-2 border-red2 pr-2 sm:pr-20">
                 <div className="flex h-7 gap-5 sm:gap-10">
-                  <a href="https://www.facebook.com/Makoto.decor" className="text-red2 flex items-center hover:text-red sm:text-3xl sm:text-3xl">
+                  <a href="https://www.facebook.com/Makoto.decor" target="_blank" className="flex items-center text-red2 hover:text-red sm:text-3xl sm:text-3xl">
                     <i className="fa-brands fa-facebook"></i>
                   </a>
-                  <a href="https://www.instagram.com/makotodecor" className="text-red2 flex items-center hover:text-red sm:text-3xl">
+                  <a href="https://www.instagram.com/makotodecor" target="_blank" className="flex items-center text-red2 hover:text-red sm:text-3xl">
                     <i className="fa-brands fa-square-instagram"></i>
                   </a>
-                  <a href="" className="text-red2 flex items-center hover:text-red sm:text-3xl">
+                  <a href="#" className="flex items-center text-red2 hover:text-red sm:text-3xl">
                     <i className="fa-brands fa-youtube"></i>
                   </a>
-                  <a href="" className="text-red2 flex items-center hover:text-red sm:text-3xl">
+                  <a href="" className="flex items-center text-red2 hover:text-red sm:text-3xl">
                     <i className="fa-brands fa-square-twitter"></i>
                   </a>
                 </div>

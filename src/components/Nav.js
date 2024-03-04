@@ -1,4 +1,5 @@
-import { Link } from 'react-scroll'
+import { Link as LinkScroll } from 'react-scroll'
+import { Link } from 'react-router-dom'
 
 export default function Nav({}) {
   return (
@@ -17,14 +18,16 @@ export default function Nav({}) {
           </div>
           <div className="flex h-7 items-center justify-center sm:h-14">
             <div className="flex items-center gap-6 sm:gap-10 ">
-              <a className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">trang chủ</a>
+              <Link to={'/'} className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
+                trang chủ
+              </Link>
               <a className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">danh mục</a>
-              <Link to="body" className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
+              <LinkScroll to="body" className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
                 sản phẩm
-              </Link>
-              <Link to="foot" className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
+              </LinkScroll>
+              <LinkScroll to="foot" className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
                 liên hệ
-              </Link>
+              </LinkScroll>
               <a className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
                 <i className="fa-solid fa-bars"></i>
               </a>
