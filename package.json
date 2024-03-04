@@ -1,7 +1,7 @@
 {
   "name": "makotodecor",
   "version": "0.1.0",
-  "homepage": "https://makotodecor.shop",
+  "homepage": "https://phung111.github.io/",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
