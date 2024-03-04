@@ -12,7 +12,7 @@ export default function BestProduct() {
           <div className="flex flex-col justify-center gap-3">
             <p className="svn_shikimaru text-xl font-semibold uppercase text-[#a8242d] sm:text-5xl">best product</p>
             <div className="h-1 w-1/3 bg-color1"></div>
-            <p className="flex gap-2 text-lg font-bold sm:flex-row sm:gap-2 sm:text-4xl">
+            <p className="flex gap-2 text-base font-bold sm:flex-row sm:gap-2 sm:text-4xl">
               <span className="font-semibold uppercase">daruma</span>
               <span className="OTF_Kaisho font-semibold uppercase">だるまさん</span>
             </p>
