@@ -17,17 +17,17 @@ export default function Nav({}) {
           </div>
           <div className="flex h-7 items-center justify-center sm:h-14">
             <div className="flex items-center gap-6 sm:gap-10 ">
-              <Link className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">trang chủ</Link>
-              <Link className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">danh mục</Link>
+              <a className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">trang chủ</a>
+              <a className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">danh mục</a>
               <Link to="body" className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
                 sản phẩm mới
               </Link>
               <Link to="foot" className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
                 liên hệ
               </Link>
-              <Link className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
-                <i class="fa-solid fa-bars"></i>
-              </Link>
+              <a className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
+                <i className="fa-solid fa-bars"></i>
+              </a>
             </div>
           </div>
         </div>

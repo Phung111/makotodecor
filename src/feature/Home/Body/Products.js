@@ -63,7 +63,7 @@ export default function Products({}) {
             dynamicBullets: true,
             clickable: true,
             renderBullet: function (index, className) {
-              return '<span class="' + className + '">' + (index + 1) + '</span>'
+              return '<span className="' + className + '">' + (index + 1) + '</span>'
             },
           }}
           navigation={{
@@ -80,7 +80,7 @@ export default function Products({}) {
           ))}
         </Swiper>
         <div className="flex h-10 w-full items-center justify-center ">
-          <div className="swiper-custom-pagination flex !w-full !translate-x-0 justify-center"></div>
+          <div className="swiper-custom-pagination men_men flex h-full !w-full !translate-x-0 justify-center"></div>
         </div>
         <div className="absolute left-0 top-0 z-10 flex h-full w-0 items-center">
           <button className={`swiper-button-prev-custom ${sNavBG} ${!canPrevious ? 'opacity-0' : 'opacity-100'}`}>
@@ -113,15 +113,15 @@ export default function Products({}) {
           slidesPerGroup={2}
           pagination={{
             // type: 'fraction',
-            el: '.pagination-custom',
+            el: '.pagination-custom-mobile',
             type: 'custom',
             renderCustom: function (swiper, current, total) {
               return current + '/' + total
             },
           }}
           navigation={{
-            prevEl: '.swiper-button-prev-custom',
-            nextEl: '.swiper-button-next-custom',
+            prevEl: '.swiper-button-prev-custom-mobile',
+            nextEl: '.swiper-button-next-custom-mobile',
           }}
         >
           {Array.from({ length: 50 }, (_, index) => (
@@ -136,14 +136,14 @@ export default function Products({}) {
           <div className="pagination-custom flex h-5 !w-full !translate-x-0 justify-center"></div>
         </div>
         <div className="absolute left-0 top-0 z-10 flex h-full w-0 items-center">
-          <button className={`swiper-button-prev-custom ${sNavBG} ${!canPrevious ? 'opacity-0' : 'opacity-100'}`}>
+          <button className={`swiper-button-prev-custom-mobile ${sNavBG} ${!canPrevious ? 'opacity-0' : 'opacity-100'}`}>
             <div className={`${sNavW}`}>
               <i className="fa-solid fa-chevron-left"></i>
             </div>
           </button>
         </div>
         <div className="absolute right-0 top-0 z-10 flex h-full w-0 items-center">
-          <button className={`swiper-button-next-custom ${sNavBG} ${!canNext ? 'opacity-0' : 'opacity-100'}`}>
+          <button className={`swiper-button-next-custom-mobile ${sNavBG} ${!canNext ? 'opacity-0' : 'opacity-100'}`}>
             <div className={`${sNavW}`}>
               <i className="fa-solid fa-chevron-right"></i>
             </div>

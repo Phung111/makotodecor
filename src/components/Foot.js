@@ -12,16 +12,16 @@ export default function Foot() {
               <div className="border-red2 flex h-1/2 items-center justify-end border-b-2 pr-2 sm:pr-20">
                 <div className="flex h-7 gap-5 sm:gap-10">
                   <a href="https://www.facebook.com/Makoto.decor" className="text-red2 flex items-center hover:text-red sm:text-3xl sm:text-3xl">
-                    <i class="fa-brands fa-facebook"></i>
+                    <i className="fa-brands fa-facebook"></i>
                   </a>
                   <a href="https://www.instagram.com/makotodecor" className="text-red2 flex items-center hover:text-red sm:text-3xl">
-                    <i class="fa-brands fa-square-instagram"></i>
+                    <i className="fa-brands fa-square-instagram"></i>
                   </a>
                   <a href="" className="text-red2 flex items-center hover:text-red sm:text-3xl">
-                    <i class="fa-brands fa-youtube"></i>
+                    <i className="fa-brands fa-youtube"></i>
                   </a>
                   <a href="" className="text-red2 flex items-center hover:text-red sm:text-3xl">
-                    <i class="fa-brands fa-square-twitter"></i>
+                    <i className="fa-brands fa-square-twitter"></i>
                   </a>
                 </div>
               </div>
