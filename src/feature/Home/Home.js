@@ -2,6 +2,7 @@ import Head from 'feature/Home/Head/Head'
 import Body from 'feature/Home/Body/Body'
 import Foot from 'components/Foot'
 import Nav from 'components/Nav'
+import Cat from 'components/Cat'
 
 export default function Home() {
   return (

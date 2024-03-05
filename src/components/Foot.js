@@ -11,7 +11,7 @@ export default function Foot() {
             <div className="relative h-10 w-full -translate-y-full sm:h-20">
               <div className="flex h-1/2 items-center justify-end border-b-2 border-red2 pr-2 sm:pr-20">
                 <div className="flex h-7 gap-5 sm:gap-10">
-                  <a href="https://www.facebook.com/Makoto.decor" target="_blank" className="flex items-center text-red2 hover:text-red sm:text-3xl sm:text-3xl">
+                  <a href="https://www.facebook.com/Makoto.decor" target="_blank" className="flex items-center text-red2 hover:text-red sm:text-3xl">
                     <i className="fa-brands fa-facebook"></i>
                   </a>
                   <a href="https://www.instagram.com/makotodecor" target="_blank" className="flex items-center text-red2 hover:text-red sm:text-3xl">
@@ -26,7 +26,7 @@ export default function Foot() {
                 </div>
               </div>
               <div className="flex h-full w-full -translate-y-[100%] justify-center sm:-translate-y-[200%]">
-                <Link to="head" className="h-[25px] w-[20px] cursor-pointer sm:h-[100px] sm:w-[80px] sm:hover:animate-bounce">
+                <Link to="head" className="h-[25px] w-[20px] animate-bounce cursor-pointer sm:h-[100px] sm:w-[80px]">
                   <img className="" src={require(`assets/images/totop.png`)} alt="totop" />
                 </Link>
               </div>

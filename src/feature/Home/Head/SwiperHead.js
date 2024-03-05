@@ -20,10 +20,13 @@ export default function SwiperHead({}) {
         loop={true}
       >
         <SwiperSlide className="flex items-center justify-center">
-          <img src={require(`assets/images/logo1.png`)} alt="logo1" className="object-contain" />
+          <img src={require(`assets/images/next1.png`)} alt="next1" className="object-contain" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={require(`assets/images/logo2.png`)} alt="logo2" className="object-contain" />
+          <img src={require(`assets/images/next2.png`)} alt="next2" className="object-contain" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={require(`assets/images/next3.png`)} alt="next3" className="object-contain" />
         </SwiperSlide>
         <button className={`next_logo absolute bottom-3 left-1/2 z-10 flex aspect-square w-8 -translate-x-1/2 sm:w-16`}>
           <img src={require(`assets/images/next_logo.png`)} alt="next_logo" className="object-contain" />

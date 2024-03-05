@@ -10,7 +10,7 @@ export default function Name() {
 
   return (
     <>
-      <div className="flex w-full flex-col gap-4 -sm:items-center">
+      <div className="flex w-full flex-col gap-4">
         <h1 className="text-2xl font-bold capitalize sm:text-3xl">cờ mèo trang trí nhật bản</h1>
         <div className="flex items-center gap-1">
           <p className="text-sm font-semibold sm:text-base">719</p>
@@ -25,9 +25,11 @@ export default function Name() {
         <Size array={a1} />
         <Color array={a2} />
         <Description>“Maneki” có nghĩa là mời gọi, “Neko” là con mèo. Đây được xem là biểu tượng may mắn phổ biến nhất được trưng bày hay làm quà tặng. Mèo may mắn Maneki Neko thường được làm bằng gốm sứ, nhựa hay kim loại. Chúng thường được đặt ở lối ra vào cửa tiệm, nhà hàng, tiệm bánh ở Nhật hay các nước Châu Á khác. Maneki Neko có nhiều màu sắc khác nhau như vàng, đỏ, trắng hoặc đen, mỗi màu sắc hay tư thế lại có ý nghĩa riêng. Ví dụ, màu vàng được xem là mang lại sự thịnh vượng và sự giàu có, trong khi đó màu đen thì được tin rằng sẽ xua đuổi ma quỷ và bảo vệ an toàn. Biểu tượng mèo Maneki Neko Maneki Neko có thể vẫy chân trái hoặc chân phải của nó. Vẫy chân phải có ý nghĩa mời gọi tiền tài và kinh doanh, vẫy chân trái thì nghĩa là mời khách hàng. Tuy nhiên, theo truyền thống chú mèo sẽ vẫy chân trái. Do đó, mèo vẫy chân trái được trưng bày phổ biến ở nhà geisha và các nhà hàng tiệc đêm.</Description>
-        <a href="https://www.facebook.com/Makoto.decor" target="_blank" className="h-[48px] w-[180px] shrink-0">
-          <Button type={'solid'}>liên hệ</Button>
-        </a>
+        <div className="flex items-center justify-center">
+          <a href="https://www.facebook.com/Makoto.decor" target="_blank" className="h-[48px] w-[180px] shrink-0">
+            <Button type={'solid'}>liên hệ</Button>
+          </a>
+        </div>
       </div>
     </>
   )

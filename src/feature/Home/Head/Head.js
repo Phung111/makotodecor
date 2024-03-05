@@ -2,6 +2,7 @@ import BestProduct from 'feature/Home/Head/BestProduct'
 import Trending from 'feature/Home/Head/Trending'
 import SwiperHead from 'feature/Home/Head/SwiperHead'
 import { Link } from 'react-scroll'
+import Cat from 'components/Cat'
 
 export default function Head() {
   return (
@@ -12,6 +13,9 @@ export default function Head() {
             <img className="absolute w-full -translate-x-2 object-cover" src={require(`assets/images/cucmau.png`)} alt="cucmau" />
             <div className="flex w-[80%] items-center justify-center px-10">
               <SwiperHead />
+            </div>
+            <div className="absolute bottom-0 left-1/3 z-20">
+              <Cat />
             </div>
           </div>
           <div className="flex flex-col gap-5 sm:px-10">
