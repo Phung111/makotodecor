@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c2f90ff.css",
-    "main.js": "/static/js/main.7c4f8fe2.js",
+    "main.css": "/static/css/main.2b82e5a6.css",
+    "main.js": "/static/js/main.27acddc9.js",
     "static/js/453.7502b5d9.chunk.js": "/static/js/453.7502b5d9.chunk.js",
     "static/media/1.png": "/static/media/1.2b58622bb63357635636.png",
     "static/media/A-OTF-KaishoMCBK1Pro-DeBold.otf": "/static/media/A-OTF-KaishoMCBK1Pro-DeBold.50312517476889e6842e.otf",
@@ -9,10 +9,12 @@
     "static/media/b1.png": "/static/media/b1.61230e7bc11546f99e0a.png",
     "static/media/SVN-Shikamaru.otf": "/static/media/SVN-Shikamaru.8be0dc8255c42d32eab9.otf",
     "static/media/tori.png": "/static/media/tori.29cf5013c32c4b005650.png",
-    "static/media/logo2.png": "/static/media/logo2.c2b98e1d438697249dc7.png",
+    "static/media/next2.png": "/static/media/next2.c2b98e1d438697249dc7.png",
+    "static/media/next3.png": "/static/media/next3.0362b038b684cd8e2407.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
-    "static/media/logo1.png": "/static/media/logo1.53cbebfe9246f659dbf9.png",
+    "static/media/next1.png": "/static/media/next1.53cbebfe9246f659dbf9.png",
+    "static/media/catpc.png": "/static/media/catpc.20bf57a942a93fdae49a.png",
     "static/media/nuocden.png": "/static/media/nuocden.072f6e40fa61ce264a89.png",
     "static/media/b22.png": "/static/media/b22.2f16ad438e53c4bd29c8.png",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
@@ -24,6 +26,7 @@
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.8d3cabfc66809162fb4d.woff2",
     "static/media/FZ DTGAME.TTF": "/static/media/FZ DTGAME.462e1457dc319fcff35e.TTF",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/catmobile.png": "/static/media/catmobile.ba16a9355be83e139c61.png",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.adc51aab4d771ab65f81.ttf",
     "static/media/torimobi.png": "/static/media/torimobi.0311f92457fb1d88675c.png",
@@ -33,12 +36,12 @@
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/index.html",
-    "main.8c2f90ff.css.map": "/static/css/main.8c2f90ff.css.map",
-    "main.7c4f8fe2.js.map": "/static/js/main.7c4f8fe2.js.map",
+    "main.2b82e5a6.css.map": "/static/css/main.2b82e5a6.css.map",
+    "main.27acddc9.js.map": "/static/js/main.27acddc9.js.map",
     "453.7502b5d9.chunk.js.map": "/static/js/453.7502b5d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c2f90ff.css",
-    "static/js/main.7c4f8fe2.js"
+    "static/css/main.2b82e5a6.css",
+    "static/js/main.27acddc9.js"
   ]
 }
