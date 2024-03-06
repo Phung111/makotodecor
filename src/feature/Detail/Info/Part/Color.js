@@ -18,11 +18,12 @@ export default function Color({ array }) {
     <>
       <Part title={'color'}>
         <div className="flex flex-wrap gap-3">
-          {array.map((item, index) => (
-            <ButtonColor key={index} isSelected={selectedColor === item} onClick={() => handleColorSelection(item)}>
-              {item}
-            </ButtonColor>
-          ))}
+          {array &&
+            array.map((item, index) => (
+              <ButtonColor key={index} isSelected={selectedColor === item} onClick={() => handleColorSelection(item)}>
+                {item}
+              </ButtonColor>
+            ))}
           <div className="bg-white"></div>
         </div>
       </Part>

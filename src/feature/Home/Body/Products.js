@@ -7,10 +7,13 @@ import 'swiper/css/grid'
 
 import { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
+import { useSelector } from 'react-redux'
 
 import Product from 'components/Product'
 
 export default function Products({}) {
+  const products = useSelector((state) => state.baseSlice.data.products)
+
   const style = {
     display: 'flex',
     justifyContent: 'center',
@@ -72,11 +75,12 @@ export default function Products({}) {
               nextEl: '.swiper-button-next-custom',
             }}
           >
-            {Array.from({ length: 50 }, (_, index) => (
-              <SwiperSlide style={style} key={index}>
-                <Product />
-              </SwiperSlide>
-            ))}
+            {products &&
+              products.map((item, index) => (
+                <SwiperSlide style={style} key={index}>
+                  <Product product={item} />
+                </SwiperSlide>
+              ))}
           </Swiper>
           <div className="men_men flex h-10 w-full items-center justify-center ">
             <div className="swiper-custom-pagination flex !w-full !translate-x-0 justify-center"></div>

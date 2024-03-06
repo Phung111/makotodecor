@@ -19,11 +19,12 @@ export default function Size({ array }) {
     <>
       <Part title={'size'}>
         <div className="flex w-full flex-wrap gap-2">
-          {array.map((item, index) => (
-            <ButtonSize key={index} isSelected={selectedSize === item} onClick={() => handleSizeSelection(item)}>
-              {item}
-            </ButtonSize>
-          ))}
+          {array &&
+            array.map((item, index) => (
+              <ButtonSize key={index} isSelected={selectedSize === item} onClick={() => handleSizeSelection(item)}>
+                {item}
+              </ButtonSize>
+            ))}
         </div>
       </Part>
     </>

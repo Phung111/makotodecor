@@ -1,49 +1,44 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
-const namespace = "baseSlice";
+const namespace = 'baseSlice'
 
 const initialState = {
-  data: {},
-};
-
-// export const someThing = createAsyncThunk(
-//   `${namespace}/something`,
-//   async (obj, { rejectWithValue }) => {
-//     return await cashierService
-//       .someThing(obj)
-//       .then((response) => {
-//         return response.data;
-//       })
-//       .catch((error) => {
-//         return rejectWithValue(error);
-//       });
-//   },
-// );
+  data: {
+    bestProduct: {},
+    newProducts: [],
+    products: [],
+    product: {},
+  },
+}
 
 const baseSlice = createSlice({
   name: namespace,
   initialState,
-  reducers: {},
-  extraReducers(builder) {
-    // builder
-    //   .addCase(someThing.pending, (state) => {
-    //     state.status = HTTP_STATUS.PENDING;
-    //   })
-    //   .addCase(someThing.fulfilled, (state) => {
-    //     state.status = HTTP_STATUS.FULFILLED;
-    //   })
-    //   .addCase(someThing.rejected, (state, { payload }) => {
-    //     state.status = HTTP_STATUS.REJECTED;
-    //     if (payload.response) {
-    //       state.errorMessage = payload.response.statusText;
-    //       state.errorStatus = payload.response.status;
-    //     }
-    //   });
+  reducers: {
+    setProducts: (state, action) => {
+      state.data.products = action.payload
+
+      const bestProductID = 0
+      state.data.bestProduct = state.data.products.find((product) => product.id === bestProductID) || {}
+
+      state.data.newProducts = state.data.products.slice(0, 3)
+
+      console.log('bestProduct', state.data.bestProduct)
+      console.log('newProducts', state.data.newProducts)
+      console.log('products', state.data.bestPproductsroduct)
+    },
+    setProduct: (state, action) => {
+      const productId = action.payload
+      state.data.product = state.data.products.find((product) => product.id === productId) || {}
+      localStorage.setItem('product', JSON.stringify(state.data.product))
+      console.log('product', state.data.product)
+    },
   },
-});
+  extraReducers(builder) {},
+})
 
-const { reducer, actions } = baseSlice;
+const { reducer, actions } = baseSlice
 
-export const {} = actions;
+export const { setBestProducts, setNewProducts, setProducts, setProduct } = actions
 
-export default reducer;
+export default reducer

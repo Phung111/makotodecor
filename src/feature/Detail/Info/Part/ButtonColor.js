@@ -6,25 +6,25 @@ export default function ButtonColor({ children, isSelected, onClick }) {
   let bgColor = 'bg-'
 
   switch (children) {
-    case 'RED':
+    case 'red':
       bgColor += 'red'
       break
-    case 'BLUE':
+    case 'blue':
       bgColor += 'blue-300'
       break
-    case 'YELLOW':
+    case 'yellow':
       bgColor += 'yellow-300'
       break
-    case 'ORANGE':
+    case 'orange':
       bgColor += 'orange-400'
       break
-    case 'GREEN':
+    case 'green':
       bgColor += 'green-500'
       break
-    case 'BLACK':
+    case 'black':
       bgColor += 'black'
       break
-    case 'WHITE':
+    case 'white':
       bgColor += 'white'
       break
     default:

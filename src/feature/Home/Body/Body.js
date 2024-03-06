@@ -1,23 +1,11 @@
 import Products from 'feature/Home/Body/Products'
 
-const mon = [
-  {
-    id: 1,
-    name: 'mèo thần tài',
-    price: 500000,
-    price: 100000,
-    imgs: [],
-    category: [],
-    colors: [],
-  },
-]
-
 export default function Body() {
   return (
     <>
       <div id="body" className="pt-5">
         <div className="flex flex-col gap-5">
-          <h2 className="svn_shikimaru text-center text-sm sm:text-2xl">From The Land of the Rising Sun to Your Home</h2>
+          <h2 className="svn_shikimaru text-center text-[13px] sm:text-2xl">From The Land of the Rising Sun to Your Home</h2>
           <div className="relative flex h-[680px] justify-center sm:h-[1000px]">
             <img className="absolute hidden sm:block" src={require(`assets/images/tori.png`)} alt="tori" />
             <img className="absolute sm:hidden" src={require(`assets/images/torimobi.png`)} alt="torimobi" />
