@@ -11,7 +11,7 @@ export default function Product({ type, product }) {
   let textName = ''
   let textPrice = ''
 
-  if (type == 'trending') {
+  if (type === 'trending') {
     textName = 'text-[9px] sm:text-[20px] leading-4 sm:leading-8'
     textPrice = 'text-[18px] sm:text-[28px]'
   } else {

@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
 const namespace = 'baseSlice'
 
@@ -8,6 +8,7 @@ const initialState = {
     newProducts: [],
     products: [],
     product: {},
+    loading: true,
   },
 }
 
@@ -23,15 +24,18 @@ const baseSlice = createSlice({
 
       state.data.newProducts = state.data.products.slice(0, 3)
 
-      console.log('bestProduct', state.data.bestProduct)
-      console.log('newProducts', state.data.newProducts)
-      console.log('products', state.data.bestPproductsroduct)
+      // console.log('bestProduct', state.data.bestProduct)
+      // console.log('newProducts', state.data.newProducts)
+      // console.log('products', state.data.bestPproductsroduct)
     },
     setProduct: (state, action) => {
       const productId = action.payload
       state.data.product = state.data.products.find((product) => product.id === productId) || {}
       localStorage.setItem('product', JSON.stringify(state.data.product))
-      console.log('product', state.data.product)
+      // console.log('product', state.data.product)
+    },
+    setLoading: (state, action) => {
+      state.data.loading = action.payload
     },
   },
   extraReducers(builder) {},
@@ -39,6 +43,6 @@ const baseSlice = createSlice({
 
 const { reducer, actions } = baseSlice
 
-export const { setBestProducts, setNewProducts, setProducts, setProduct } = actions
+export const { setBestProducts, setNewProducts, setProducts, setProduct, setLoading } = actions
 
 export default reducer

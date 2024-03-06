@@ -1,5 +1,3 @@
-let srcImg = 'assets/images/sp/'
-
 export let monProducts = [
   {
     id: 4,

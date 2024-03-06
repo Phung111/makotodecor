@@ -109,7 +109,7 @@
   }
 
   .catpc {
-    width: 125px;
+    width: 100px;
     height: 125px;
     margin: 0 auto;
     object-fit: contain;
@@ -125,7 +125,7 @@
       background-position-x: 0px;
     }
     to {
-      background-position-x: -4000px;
+      background-position-x: -3200px;
     }
   }
   @-moz-keyframes moveXpc {
@@ -133,7 +133,7 @@
       background-position-x: 0px;
     }
     to {
-      background-position-x: -4000px;
+      background-position-x: -3200px;
     }
   }
   @-o-keyframes moveXpc {
@@ -141,7 +141,7 @@
       background-position-x: 0px;
     }
     to {
-      background-position-x: -4000px;
+      background-position-x: -3200px;
     }
   }
   @keyframes moveXpc {
@@ -149,13 +149,13 @@
       background-position-x: 0px;
     }
     to {
-      background-position-x: -4000px;
+      background-position-x: -3200px;
     }
   }
 
   .catmobile {
     width: 50px;
-    height: 50px;
+    height: 63px;
     margin: 0 auto;
     object-fit: contain;
     background-image: url('assets/images/catmobile.png');
