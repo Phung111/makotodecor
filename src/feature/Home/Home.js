@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div className="flex flex-col">
         <div className="contain">
-          <div id="head" className="flex flex-col gap-10 pb-10 sm:pb-20">
+          <div id="head" className="flex flex-col pb-10 sm:pb-20">
             <Nav />
             <Head />
           </div>

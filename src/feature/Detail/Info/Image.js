@@ -18,7 +18,7 @@ export default function Image() {
 
   return (
     <>
-      <div className="flex w-full flex-col gap-3 sm:w-[820px]">
+      <div className="flex w-full flex-col gap-3 sm:w-[850px]">
         {imgs && <img src={require(`assets/images/sp/${currentImage}.png`)} className="aspect-square w-full bg-gray object-contain" />}
         <Swiper
           modules={[Navigation]}
