@@ -58,7 +58,7 @@ export let monProducts = [
     category: 'daruma',
     sizes: ['S', 'M', 'L', 'XL'],
     colors: ['red', 'yellow'],
-    des: 'Daruma Nguyện Ước giấy truyền thống Nhật Bản, một thần vật bùa may mắn truyền thống của Nhật Bản mô phỏng theo Bồ Đề Đạt Ma, người sáng lập ra truyền thống Thiền tông của Phật giáo.',
+    des: 'Daruma là một thần vật bùa may mắn truyền thống của Nhật Bản mô phỏng theo Bồ Đề Đạt Ma, người sáng lập ra truyền thống Thiền tông của Phật giáo.',
     imgs: [`0`, `0-1`, `0-2`],
   },
 ]
