@@ -25,8 +25,8 @@ export default function Foot() {
                   </a>
                 </div>
               </div>
-              <div className="flex h-full w-full -translate-y-[100%] justify-center sm:-translate-y-[200%]">
-                <Link to="head" smooth={true} className="h-[25px] w-[20px] animate-bounce cursor-pointer sm:h-[100px] sm:w-[80px]">
+              <div className="flex h-full w-full -translate-y-[100%] pl-[10%] sm:-translate-y-[200%]">
+                <Link to="head" smooth={true} className="h-[40px] w-[30px] animate-bounce cursor-pointer sm:h-[100px] sm:w-[80px]">
                   <img className="" src={require(`assets/images/totop.png`)} alt="totop" />
                 </Link>
               </div>
