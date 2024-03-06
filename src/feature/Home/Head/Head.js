@@ -21,7 +21,7 @@ export default function Head() {
           <div className="flex flex-col gap-5 sm:px-10">
             <div className="text-justify">Makoto đem hơi thở trong văn hóa Nhật Bản truyền thống đến không gian sống và làm việc của bạn. Người Nhật rất coi trọng sự hòa hợp giữa con người và thiên nhiên, giữa quá khứ và tương lai, giữa truyền thống và hiện đại. </div>
             <div className="flex justify-center">
-              <Link to="foot">
+              <Link to="foot" smooth={true}>
                 <button className="w-[200px] rounded-full bg-black p-2 text-white hover:bg-black/70">Thông tin chi tiết</button>
               </Link>
             </div>

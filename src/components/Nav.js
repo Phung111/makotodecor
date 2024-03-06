@@ -22,10 +22,10 @@ export default function Nav({}) {
                 trang chủ
               </Link>
               <a className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">danh mục</a>
-              <LinkScroll to="body" className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
+              <LinkScroll to="body" smooth={true} className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
                 sản phẩm
               </LinkScroll>
-              <LinkScroll to="foot" className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
+              <LinkScroll to="foot" smooth={true} className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
                 liên hệ
               </LinkScroll>
               <a className="cursor-pointer text-[10px] font-bold uppercase transition hover:text-color1 sm:text-[18px] sm:hover:scale-[110%]">
