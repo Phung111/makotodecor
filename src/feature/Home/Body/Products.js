@@ -128,13 +128,12 @@ export default function Products({}) {
               nextEl: '.swiper-button-next-custom-mobile',
             }}
           >
-            {Array.from({ length: 50 }, (_, index) => (
-              <SwiperSlide style={styleMobile} key={index}>
-                <div className="h-[250px] w-[180px]">
-                  <Product />
-                </div>
-              </SwiperSlide>
-            ))}
+            {products &&
+              products.map((item, index) => (
+                <SwiperSlide style={styleMobile} key={index}>
+                  <Product product={item} />
+                </SwiperSlide>
+              ))}
           </Swiper>
           <div className="men_men flex h-10 w-full items-center justify-center">
             <div className="swiper-custom-pagination-mobile flex h-5 !w-full !translate-x-0 justify-center"></div>
