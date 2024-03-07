@@ -33,8 +33,7 @@ export default function Products({}) {
   const [canPrevious, setCanPrevious] = useState(false)
   const [canNext, setCanNext] = useState(true)
 
-  const sNavBG = `origin-center -translate-x-1/2 transform !rounded-full font-bold border-2 border-white text-white shadow-md sm:transition sm:hover:scale-150 `
-  const sNavW = `flex aspect-square w-10 cursor-pointer items-center justify-center text-lg`
+  const swipreBtnClass = `relative z-30 h-10 w-10 rounded-full shadow-md sm:transition sm:hover:scale-150 `
   useEffect(() => {
     const bullets = document.querySelectorAll('.swiper-pagination-bullet')
 
@@ -82,22 +81,18 @@ export default function Products({}) {
                 </SwiperSlide>
               ))}
           </Swiper>
+          <div className="absolute left-0 top-0 flex h-full w-full items-center">
+            <div className="flex w-full justify-between">
+              <button className={`swiper-button-prev-custom -translate-x-[100%] ${swipreBtnClass} ${!canPrevious ? 'opacity-0' : 'opacity-100'}`}>
+                <img src={require(`assets/images/button_prev.png`)} alt="button_prev" className="object-contain" />
+              </button>
+              <button className={`swiper-button-next-custom translate-x-[100%] ${swipreBtnClass} ${!canNext ? 'opacity-0' : 'opacity-100'}`}>
+                <img src={require(`assets/images/button_next.png`)} alt="button_next" className="object-contain" />
+              </button>
+            </div>
+          </div>
           <div className="men_men flex h-10 w-full items-center justify-center ">
             <div className="swiper-custom-pagination flex !w-full !translate-x-0 justify-center"></div>
-          </div>
-          <div className="absolute left-0 top-0 z-10 flex h-full w-0 items-center">
-            <button className={`swiper-button-prev-custom ${sNavBG} ${!canPrevious ? 'opacity-0' : 'opacity-100'}`}>
-              <div className={`${sNavW}`}>
-                <i className="fa-solid fa-chevron-left"></i>
-              </div>
-            </button>
-          </div>
-          <div className="absolute right-0 top-0 z-10 flex h-full w-0 items-center">
-            <button className={`swiper-button-next-custom ${sNavBG} ${!canNext ? 'opacity-0' : 'opacity-100'}`}>
-              <div className={`${sNavW}`}>
-                <i className="fa-solid fa-chevron-right"></i>
-              </div>
-            </button>
           </div>
         </div>
       )}
@@ -135,78 +130,21 @@ export default function Products({}) {
                 </SwiperSlide>
               ))}
           </Swiper>
+          <div className="absolute left-0 top-0 flex h-full w-full items-center">
+            <div className="flex w-full justify-between">
+              <button className={`swiper-button-prev-custom-mobile -translate-x-[100%] ${swipreBtnClass} ${!canPrevious ? 'opacity-0' : 'opacity-100'}`}>
+                <img src={require(`assets/images/button_prev.png`)} alt="button_prev" className="object-contain" />
+              </button>
+              <button className={`swiper-button-next-custom-mobile translate-x-[100%] ${swipreBtnClass} ${!canNext ? 'opacity-0' : 'opacity-100'}`}>
+                <img src={require(`assets/images/button_next.png`)} alt="button_next" className="object-contain" />
+              </button>
+            </div>
+          </div>
           <div className="men_men flex h-10 w-full items-center justify-center">
             <div className="swiper-custom-pagination-mobile flex h-5 !w-full !translate-x-0 justify-center"></div>
           </div>
-          <div className="absolute left-0 top-0 z-10 flex h-full w-0 items-center">
-            <button className={`swiper-button-prev-custom-mobile ${sNavBG} ${!canPrevious ? 'opacity-0' : 'opacity-100'}`}>
-              <div className={`${sNavW}`}>
-                <i className="fa-solid fa-chevron-left"></i>
-              </div>
-            </button>
-          </div>
-          <div className="absolute right-0 top-0 z-10 flex h-full w-0 items-center">
-            <button className={`swiper-button-next-custom-mobile ${sNavBG} ${!canNext ? 'opacity-0' : 'opacity-100'}`}>
-              <div className={`${sNavW}`}>
-                <i className="fa-solid fa-chevron-right"></i>
-              </div>
-            </button>
-          </div>
         </div>
       )}
-      {/* <div className="relative hidden h-full w-full sm:block">
-        <Swiper
-          onSlideChange={(swiper) => {
-            setCanPrevious(swiper.activeIndex !== 0)
-            setCanNext(swiper.isEnd ? false : true)
-          }}
-          modules={[Grid, Navigation, Pagination, Autoplay]}
-          slidesPerView={5}
-          grid={{
-            fill: 'row',
-            rows: 2,
-          }}
-          spaceBetween={30}
-          slidesPerGroup={5}
-          pagination={{
-            el: `.swiper-custom-pagination`,
-            dynamicBullets: true,
-            clickable: true,
-            renderBullet: function (index, className) {
-              return '<span className="' + className + '">' + (index + 1) + '</span>'
-            },
-          }}
-          navigation={{
-            prevEl: '.swiper-button-prev-custom',
-            nextEl: '.swiper-button-next-custom',
-          }}
-        >
-          {Array.from({ length: 50 }, (_, index) => (
-            <SwiperSlide style={style} key={index}>
-              <div className="h-[320px] w-[180px]">
-                <Product />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <div className="flex h-10 w-full items-center justify-center ">
-          <div className="swiper-custom-pagination men_men flex h-full !w-full !translate-x-0 justify-center"></div>
-        </div>
-        <div className="absolute left-0 top-0 z-10 flex h-full w-0 items-center">
-          <button className={`swiper-button-prev-custom ${sNavBG} ${!canPrevious ? 'opacity-0' : 'opacity-100'}`}>
-            <div className={`${sNavW}`}>
-              <i className="fa-solid fa-chevron-left"></i>
-            </div>
-          </button>
-        </div>
-        <div className="absolute right-0 top-0 z-10 flex h-full w-0 items-center">
-          <button className={`swiper-button-next-custom ${sNavBG} ${!canNext ? 'opacity-0' : 'opacity-100'}`}>
-            <div className={`${sNavW}`}>
-              <i className="fa-solid fa-chevron-right"></i>
-            </div>
-          </button>
-        </div>
-      </div> */}
     </>
   )
 }

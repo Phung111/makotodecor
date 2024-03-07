@@ -17,7 +17,7 @@ export default function BestProduct() {
         <div className="flex cursor-pointer gap-5 sm:gap-10 sm:transition sm:hover:scale-[107%]">
           <div className="relative flex h-40 w-40 shrink-0 items-center justify-center p-5 sm:h-60 sm:w-60">
             <div className="aspect-square h-full w-full rounded-full bg-color1" />
-            <img className="absolute left-0 top-0 object-contain" src={require(`assets/images/daruma.png`)} alt="logo" />
+            <img className="absolute left-0 top-0 object-contain" src={require(`assets/images/sp/${bestProduct.imgs[0]}.png`)} alt="logo" />
           </div>
           <div className="flex flex-col gap-3 sm:justify-center">
             <p className="svn_shikimaru text-xl font-semibold uppercase text-[#a8242d] sm:text-5xl">best product</p>

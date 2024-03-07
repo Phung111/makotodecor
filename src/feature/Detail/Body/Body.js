@@ -6,7 +6,14 @@ export default function Body() {
 
   return (
     <>
-      <div className="flex flex-col gap-2 p-4">{imgs && imgs.map((item, index) => <img src={require(`assets/images/sp/${item}.png`)} className="aspect-square w-full object-contain" />)}</div>
+      <div className="p-4">
+        <div className="flex flex-col gap-10">
+          <div className="flex h-14 items-center bg-gray px-4">
+            <h2 className="text-xl font-medium uppercase">chi tiết sản phẩm</h2>
+          </div>
+          <div className="flex flex-col gap-2 p-4">{imgs && imgs.map((item, index) => <img src={require(`assets/images/sp/${item}.png`)} className="aspect-square w-full object-contain" />)}</div>
+        </div>
+      </div>
     </>
   )
 }

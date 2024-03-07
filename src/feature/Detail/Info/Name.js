@@ -26,10 +26,26 @@ export default function Name() {
           <Size array={product.sizes} />
           <Color array={product.colors} />
           <Description>{product.des}</Description>
-          <div className="flex items-center -sm:justify-center">
-            <a href="https://www.facebook.com/Makoto.decor" target="_blank" className="h-[48px] w-[180px] shrink-0">
+          <div className="flex flex-col-reverse items-center justify-between gap-5 sm:flex-row">
+            <a href="https://www.facebook.com/Makoto.decor" rel="noopener noreferrer" target="_blank" className="h-[48px] w-[180px] shrink-0">
               <Button type={'solid'}>liên hệ</Button>
             </a>
+            {product.gifts && (
+              <div className="flex flex-col items-center gap-5 sm:flex-row">
+                <p className="">Quà tặng</p>
+                <div className="flex">
+                  <div className="h-[120px] w-[120px] bg-gray">
+                    <img src={require(`assets/images/gift1.png`)} alt="gift" className="object-contain" />
+                  </div>
+                  <div className="flex h-[120px] w-[60px] items-center justify-center text-black/50">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div className="h-[120px] w-[120px] bg-gray">
+                    <img src={require(`assets/images/gift2.png`)} alt="gift" className="object-contain" />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}

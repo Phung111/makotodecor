@@ -10,6 +10,7 @@ export let monProducts = [
     colors: ['orange', 'yellow', 'green'],
     des: '',
     imgs: [`4`],
+    gifts: ['4g'],
   },
   {
     id: 3,
@@ -22,6 +23,7 @@ export let monProducts = [
     colors: ['white', 'blue', 'black'],
     des: '',
     imgs: [`3`],
+    gifts: ['3g'],
   },
   {
     id: 2,
@@ -34,6 +36,7 @@ export let monProducts = [
     colors: ['red', 'blue', 'green'],
     des: '',
     imgs: [`2`],
+    gifts: ['2g'],
   },
   {
     id: 1,
@@ -46,6 +49,7 @@ export let monProducts = [
     colors: ['red', 'blue', 'green'],
     des: '',
     imgs: [`1`, `1-1`, `1-2`],
+    gifts: ['1g'],
   },
   {
     id: 0,
@@ -58,5 +62,6 @@ export let monProducts = [
     colors: ['red', 'yellow'],
     des: 'Daruma là một thần vật bùa may mắn truyền thống của Nhật Bản mô phỏng theo Bồ Đề Đạt Ma, người sáng lập ra truyền thống Thiền tông của Phật giáo.',
     imgs: [`0`, `0-1`, `0-2`],
+    gifts: ['0g'],
   },
 ]

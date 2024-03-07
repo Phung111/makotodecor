@@ -9,7 +9,7 @@ export default function SwiperHead({}) {
       <Swiper
         modules={[Autoplay, Navigation]}
         navigation={{
-          nextEl: '.next_logo',
+          nextEl: '.button_next',
         }}
         autoplay={{
           delay: 2000,
@@ -27,8 +27,8 @@ export default function SwiperHead({}) {
         <SwiperSlide>
           <img src={require(`assets/images/next3.png`)} alt="next3" className="object-contain" />
         </SwiperSlide>
-        <button className={`next_logo absolute bottom-3 left-1/2 z-10 flex aspect-square w-8 -translate-x-1/2 sm:w-16`}>
-          <img src={require(`assets/images/next_logo.png`)} alt="next_logo" className="object-contain" />
+        <button className={`button_next absolute bottom-3 left-1/2 z-10 flex aspect-square w-8 -translate-x-1/2 sm:w-16`}>
+          <img src={require(`assets/images/button_next.png`)} alt="button_next" className="object-contain" />
         </button>
       </Swiper>
     </>

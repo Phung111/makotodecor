@@ -7,10 +7,10 @@ export default function Foot() {
         <div className="relative flex justify-center">
           <img className="absolute -bottom-5 w-full sm:-bottom-10" src={require(`assets/images/nuocden.png`)} alt="nuocden" />
           <div className="absolute h-full w-full">
-            <img className="" src={require(`assets/images/b3.png`)} alt="bgfoot" />
+            <img className="" src={require(`assets/images/b3.jpg`)} alt="bgfoot" />
             <div className="relative h-10 w-full -translate-y-full sm:h-20">
               <div className="flex h-1/2 items-center justify-end border-b-2 border-red2 pr-2 sm:pr-20">
-                <div className="flex h-7 gap-5 sm:gap-10">
+                <div className="contain flex h-7 justify-end gap-5 sm:gap-10">
                   <a href="https://www.facebook.com/Makoto.decor" target="_blank" className="flex items-center text-red2 hover:text-red sm:text-3xl">
                     <i className="fa-brands fa-facebook"></i>
                   </a>
@@ -25,7 +25,7 @@ export default function Foot() {
                   </a>
                 </div>
               </div>
-              <div className="flex h-full w-full -translate-y-[100%] pl-[10%] sm:-translate-y-[200%]">
+              <div className="contain flex -translate-y-[150%] pl-[10%]">
                 <Link to="head" smooth={true} className="h-[40px] w-[30px] animate-bounce cursor-pointer sm:h-[100px] sm:w-[80px]">
                   <img className="" src={require(`assets/images/totop.png`)} alt="totop" />
                 </Link>
