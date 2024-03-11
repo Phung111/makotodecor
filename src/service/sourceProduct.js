@@ -1,7 +1,7 @@
 export let monProducts = [
   {
     id: 1,
-    name: 'cờ trang trí nhật bản',
+    name: 'rèm noren',
     category: 'cờ',
     des: '',
     gifts: ['0g'],
