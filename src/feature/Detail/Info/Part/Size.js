@@ -11,7 +11,7 @@ export default function Size({ array, setSelectedSizeAndPrice }) {
     setSelectedSize(size)
     setSelectedPrice(price)
     setSelectedPriceFirst(priceFirst)
-    setSelectedSizeAndPrice(size, price, priceFirst) // Thêm dòng này để truyền kích thước, giá và giá đầu tiên được chọn sang component Name
+    setSelectedSizeAndPrice(size, price, priceFirst)
   }
 
   return (
