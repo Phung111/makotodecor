@@ -5,21 +5,24 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { useSelector } from 'react-redux'
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { setCurrentImage } from 'service/baseSlice'
 
 export default function Image() {
+  const dispatch = useDispatch()
   const product = useSelector((state) => state.baseSlice.data.product)
-  const imgs = product.imgs
+  const currentImage = useSelector((state) => state.baseSlice.data.currentImage)
 
-  const [currentImage, setCurrentImage] = useState(imgs[0])
+  const colors = product.colors
 
   const handleSlideClick = (image) => {
-    setCurrentImage(image)
+    dispatch(setCurrentImage(image))
   }
 
   return (
     <>
-      <div className="flex w-full flex-col gap-3 sm:w-[850px]">
-        {imgs && <img src={require(`assets/images/sp/${currentImage}.png`)} className="aspect-square w-full bg-gray object-contain" />}
+      <div className="flex w-full shrink-0 flex-col gap-3 sm:w-[550px]">
+        {colors && <img src={require(`assets/images/sp/${currentImage}.png`)} className="aspect-square h-full w-full bg-gray object-contain" />}
         <Swiper
           modules={[Navigation]}
           navigation={{
@@ -30,10 +33,10 @@ export default function Image() {
           spaceBetween={12}
           className="h-full w-full"
         >
-          {imgs &&
-            imgs.map((item, index) => (
-              <SwiperSlide key={index} onClick={() => handleSlideClick(item)}>
-                <img src={require(`assets/images/sp/${item}.png`)} className="aspect-square w-[94px] cursor-pointer bg-gray object-contain hover:bg-black/20" />
+          {colors &&
+            colors.map((item, index) => (
+              <SwiperSlide key={index} onClick={() => handleSlideClick(item.img)}>
+                <img src={require(`assets/images/sp/${item.img}.png`)} className="aspect-square w-[94px] cursor-pointer bg-gray object-contain hover:bg-black/20" />
               </SwiperSlide>
             ))}
           <button className="swiper-button-prev" />

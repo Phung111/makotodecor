@@ -2,17 +2,16 @@ import { useState } from 'react'
 import Part from 'feature/Detail/Info/Part/Part'
 import ButtonSize from 'feature/Detail/Info/Part/ButtonSize'
 
-export default function Size({ array }) {
-  const [selectedSize, setSelectedSize] = useState(null)
+export default function Size({ array, setSelectedSizeAndPrice }) {
+  const [selectedSize, setSelectedSize] = useState(array[0].size)
+  const [selectedPrice, setSelectedPrice] = useState(array[0].price)
+  const [selectedPriceFirst, setSelectedPriceFirst] = useState(array[0].priceFirst)
 
-  const handleSizeSelection = (size) => {
-    if (selectedSize === size) {
-      setSelectedSize(null)
-      console.log('Deselect size:', size)
-    } else {
-      setSelectedSize(size)
-      console.log('Select size:', size)
-    }
+  const handleSizeSelection = (size, price, priceFirst) => {
+    setSelectedSize(size)
+    setSelectedPrice(price)
+    setSelectedPriceFirst(priceFirst)
+    setSelectedSizeAndPrice(size, price, priceFirst) // Thêm dòng này để truyền kích thước, giá và giá đầu tiên được chọn sang component Name
   }
 
   return (
@@ -21,8 +20,8 @@ export default function Size({ array }) {
         <div className="flex w-full flex-wrap gap-2">
           {array &&
             array.map((item, index) => (
-              <ButtonSize key={index} isSelected={selectedSize === item} onClick={() => handleSizeSelection(item)}>
-                {item}
+              <ButtonSize key={index} isSelected={selectedSize === item.size} onClick={() => handleSizeSelection(item.size, item.price, item.priceFirst)}>
+                {item.size}
               </ButtonSize>
             ))}
         </div>

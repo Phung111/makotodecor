@@ -27,8 +27,8 @@ export default function Detail() {
               <Body />
             </div>
             {/* <div className="bg-white">
-            <Feedback />
-          </div> */}
+              <Feedback />
+            </div> */}
           </div>
         </div>
         <Foot />

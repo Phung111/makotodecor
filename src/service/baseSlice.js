@@ -9,6 +9,7 @@ const initialState = {
     products: [],
     product: {},
     loading: true,
+    currentImage: null,
   },
 }
 
@@ -30,12 +31,17 @@ const baseSlice = createSlice({
     },
     setProduct: (state, action) => {
       const productId = action.payload
-      state.data.product = state.data.products.find((product) => product.id === productId) || {}
+      let productCurrent = state.data.products.find((product) => product.id === productId) || {}
+      state.data.product = productCurrent
+      state.data.currentImage = productCurrent.colors[0].img
       localStorage.setItem('product', JSON.stringify(state.data.product))
       // console.log('product', state.data.product)
     },
     setLoading: (state, action) => {
       state.data.loading = action.payload
+    },
+    setCurrentImage: (state, action) => {
+      state.data.currentImage = action.payload
     },
   },
   extraReducers(builder) {},
@@ -43,6 +49,6 @@ const baseSlice = createSlice({
 
 const { reducer, actions } = baseSlice
 
-export const { setBestProducts, setNewProducts, setProducts, setProduct, setLoading } = actions
+export const { setBestProducts, setNewProducts, setProducts, setProduct, setLoading, setCurrentImage } = actions
 
 export default reducer

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { setProduct } from 'service/baseSlice'
+import { setProduct, setCurrentImage } from 'service/baseSlice'
 import { useDispatch } from 'react-redux'
 
 export default function Product({ type, product }) {
@@ -29,17 +29,17 @@ export default function Product({ type, product }) {
                 <div className="aspect-square w-full rounded-full bg-color2" />
               </div>
               <div className="absolute z-10 h-full w-full p-2 sm:p-5">
-                <img className="h-full w-full object-contain" src={require(`assets/images/sp/${product.imgs[0]}.png`)} alt="product" />
+                <img className="h-full w-full object-contain" src={require(`assets/images/sp/${product.colors[0].img}.png`)} alt="product" />
               </div>
             </div>
             <div className="flex h-[15%] justify-center bg-black">
               <p className={`${textName} !line-clamp-1 font-bold capitalize text-white`}>{product.name}</p>
             </div>
             <div className="flex h-1/5 justify-center bg-color1">
-              <p className={`${textPrice} flex items-center justify-center font-bold text-white`}>{product.price}</p>
+              <p className={`${textPrice} flex items-center justify-center font-bold text-white`}>{product.sizes[0].price}</p>
             </div>
             <div className="flex h-1/5 justify-center">
-              <p className={`${textPrice} flex items-center justify-center font-bold line-through`}>{product.priceFirst}</p>
+              <p className={`${textPrice} flex items-center justify-center font-bold line-through`}>{product.sizes[0].priceFirst}</p>
             </div>
           </div>
         </Link>

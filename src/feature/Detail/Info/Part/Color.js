@@ -2,17 +2,17 @@ import { useState } from 'react'
 import Part from 'feature/Detail/Info/Part/Part'
 import ButtonColor from 'feature/Detail/Info/Part/ButtonColor'
 
+import { useDispatch } from 'react-redux'
+import { setCurrentImage } from 'service/baseSlice'
+
 export default function Color({ array }) {
-  const [selectedColor, setSelectedColor] = useState(null)
+  const dispatch = useDispatch()
+
+  const [selectedColor, setSelectedColor] = useState(array[0].color)
 
   const handleColorSelection = (color) => {
-    if (selectedColor === color) {
-      setSelectedColor(null)
-      console.log('Deselect color:', color)
-    } else {
-      setSelectedColor(color)
-      console.log('Select color:', color)
-    }
+    dispatch(setCurrentImage(color.img))
+    setSelectedColor(color.color)
   }
   return (
     <>
@@ -20,8 +20,8 @@ export default function Color({ array }) {
         <div className="flex flex-wrap gap-3">
           {array &&
             array.map((item, index) => (
-              <ButtonColor key={index} isSelected={selectedColor === item} onClick={() => handleColorSelection(item)}>
-                {item}
+              <ButtonColor key={index} isSelected={selectedColor === item.color} onClick={() => handleColorSelection(item)}>
+                {item.color}
               </ButtonColor>
             ))}
           <div className="bg-white"></div>
