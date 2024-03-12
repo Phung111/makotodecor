@@ -48,7 +48,7 @@ export default function Name() {
                     <img src={require(`assets/images/gift1.png`)} alt="gift" className="object-contain" />
                   </div>
                   <div className="flex h-[120px] w-[60px] items-center justify-center text-black/50">
-                    <i class="fa-solid fa-plus"></i>
+                    <i className="fa-solid fa-plus"></i>
                   </div>
                   <div className="h-[120px] w-[120px] bg-gray">
                     <img src={require(`assets/images/gift2.png`)} alt="gift" className="object-contain" />
