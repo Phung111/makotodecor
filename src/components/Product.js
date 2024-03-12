@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { setProduct, setCurrentImage } from 'service/baseSlice'
 import { useDispatch } from 'react-redux'
+import { Img } from 'react-image'
 
 export default function Product({ type, product }) {
   const dispatch = useDispatch()
@@ -29,7 +30,7 @@ export default function Product({ type, product }) {
                 <div className="aspect-square w-full rounded-full bg-color2" />
               </div>
               <div className="absolute z-10 h-full w-full p-2 sm:p-5">
-                <img className="h-full w-full object-contain" src={require(`assets/images/sp/${product.colors[0].img}.png`)} alt="product" />
+                <img className="h-full w-full object-contain" src={require(`assets/images/sp/${product.colors[0].img}.png`)} alt="product" lazy />
               </div>
             </div>
             <div className="flex h-[15%] justify-center bg-black">

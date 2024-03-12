@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { setCurrentImage } from 'service/baseSlice'
+import { Img } from 'react-image'
 
 export default function Image() {
   const dispatch = useDispatch()
@@ -36,7 +37,7 @@ export default function Image() {
           {colors &&
             colors.map((item, index) => (
               <SwiperSlide key={index} onClick={() => handleSlideClick(item.img)}>
-                <img src={require(`assets/images/sp/${item.img}.png`)} className="aspect-square w-[94px] cursor-pointer bg-gray object-contain hover:bg-black/20" />
+                <Img src={require(`assets/images/sp/${item.img}.png`)} className="aspect-square w-[94px] cursor-pointer bg-gray object-contain hover:bg-black/20" lazy />
               </SwiperSlide>
             ))}
           <button className="swiper-button-prev" />

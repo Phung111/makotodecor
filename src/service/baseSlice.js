@@ -24,10 +24,6 @@ const baseSlice = createSlice({
       state.data.bestProduct = state.data.products.find((product) => product.id === bestProductID) || {}
 
       state.data.newProducts = state.data.products.slice(0, 3)
-
-      // console.log('bestProduct', state.data.bestProduct)
-      // console.log('newProducts', state.data.newProducts)
-      // console.log('products', state.data.bestPproductsroduct)
     },
     setProduct: (state, action) => {
       const productId = action.payload
@@ -35,7 +31,6 @@ const baseSlice = createSlice({
       state.data.product = productCurrent
       state.data.currentImage = productCurrent.colors[0].img
       localStorage.setItem('product', JSON.stringify(state.data.product))
-      // console.log('product', state.data.product)
     },
     setLoading: (state, action) => {
       state.data.loading = action.payload
