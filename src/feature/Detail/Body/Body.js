@@ -4,7 +4,6 @@ export default function Body() {
   const product = useSelector((state) => state.baseSlice.data.product)
   const colors = product.colors
   const otherImgs = product.otherImgs
-  console.log(otherImgs)
 
   return (
     <>

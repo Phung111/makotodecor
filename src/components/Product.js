@@ -29,7 +29,7 @@ export default function Product({ type, product }) {
                 <div className="aspect-square w-full rounded-full bg-color2" />
               </div>
               <div className="absolute z-10 h-full w-full p-2 sm:p-5">
-                <img className="h-full w-full object-contain" src={require(`assets/images/sp/${product.colors[0].img}.png`)} alt="product" lazy />
+                <img className="h-full w-full object-contain" src={require(`assets/images/sp/${product.colors[0].img}.png`)} alt="product" />
               </div>
             </div>
             <div className="flex h-[15%] justify-center bg-black">
