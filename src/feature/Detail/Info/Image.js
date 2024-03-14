@@ -7,7 +7,6 @@ import { useSelector } from 'react-redux'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { setCurrentImage } from 'service/baseSlice'
-import { Img } from 'react-image'
 
 export default function Image() {
   const dispatch = useDispatch()
@@ -27,7 +26,7 @@ export default function Image() {
   return (
     <>
       <div className="flex w-full shrink-0 flex-col gap-3 sm:w-[550px]">
-        {colors && <Img width={600} height={600} src={require(`assets/images/sp/${currentImage}.png`)} className="aspect-square h-full w-full bg-gray object-contain" />}
+        {colors && <img width={600} height={600} src={require(`assets/images/sp/${currentImage}.png`)} className="aspect-square h-full w-full bg-gray object-contain" />}
         <div className="relative">
           <Swiper
             modules={[Navigation]}

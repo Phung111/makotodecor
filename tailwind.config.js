@@ -32,46 +32,4 @@ module.exports = {
     },
   },
   plugins: [],
-  module: {
-    rules: [
-      // Rule cho JavaScript và JSX
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-      // Rule cho CSS và SCSS
-      {
-        test: /\.(sa|sc|c)ss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-      // Rule cho hình ảnh
-      {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: {
-                progressive: true,
-              },
-              optipng: {
-                enabled: false,
-              },
-              pngquant: {
-                quality: [0.65, 0.9],
-                speed: 4,
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-            },
-          },
-        ],
-      },
-    ],
-  },
 }

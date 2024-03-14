@@ -50,6 +50,6 @@ export let monProducts = [
       { color: 'green', img: '0-6' },
       { color: 'yellow', img: '0-7' },
     ],
-    otherImgs: [],
+    otherImgs: ['0b1'],
   },
 ]

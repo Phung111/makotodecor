@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { setProduct, setCurrentImage } from 'service/baseSlice'
 import { useDispatch } from 'react-redux'
-import { Img } from 'react-image'
 
 export default function Product({ type, product }) {
   const dispatch = useDispatch()
