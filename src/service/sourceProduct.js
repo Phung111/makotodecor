@@ -1,11 +1,47 @@
 export let monProducts = [
   {
-    id: 1,
-    name: 'rèm noren',
+    id: 3,
+    name: 'thẻ gỗ daruma',
+    category: 'gỗ',
+    des: '',
+    gifts: ['0g'],
+    off: 30,
+    sold: 475,
+    sizes: [{ size: '10cm x 10cm', price: '95.000', priceFirst: '135.000' }],
+    colors: [
+      { color: 'blue', img: '3' },
+      { color: 'pink', img: '3-1' },
+      { color: 'red', img: '3-2' },
+    ],
+    otherImgs: ['3b-1'],
+    nocolors: ['3-3', '3-4'],
+  },
+  {
+    id: 2,
+    name: 'cờ gỗ để bàn',
     category: 'cờ',
     des: '',
     gifts: ['0g'],
     off: 30,
+    sold: 475,
+    sizes: [{ size: '13.5cm x 30cm', price: '120.000', priceFirst: '170.000' }],
+    colors: [
+      { color: 'blue', img: '2' },
+      { color: 'pink', img: '2-1' },
+      { color: 'white', img: '2-2' },
+      { color: 'black', img: '2-3' },
+    ],
+    otherImgs: ['2b-1', '2b-2', '2b-3', '2b-4'],
+    nocolors: ['2n-1', '2n-2', '2n-3', '2n-4', '2n-5', '2n-6', '2n-7', '2n-8', '2n-9', '2n-10', '2n-11', '2n-12', '2n-13', '2n-14', '2n-15'],
+  },
+  {
+    id: 1,
+    name: 'rèm noren',
+    category: 'rèm',
+    des: '',
+    gifts: ['0g'],
+    off: 30,
+    sold: 233,
     sizes: [
       { size: '65cm x 100cm', price: '425.000', priceFirst: '600.000' },
       { size: '65cm x 150cm', price: '525.000', priceFirst: '750.000' },
@@ -22,6 +58,7 @@ export let monProducts = [
       { color: 'black', img: '1-3' },
     ],
     otherImgs: ['1-4'],
+    nocolors: [],
   },
   {
     id: 0,
@@ -30,6 +67,7 @@ export let monProducts = [
     des: 'Daruma là một thần vật bùa may mắn truyền thống của Nhật Bản mô phỏng theo Bồ Đề Đạt Ma, người sáng lập ra truyền thống Thiền tông của Phật giáo.',
     gifts: ['0g'],
     off: 30,
+    sold: 129,
     sizes: [
       { size: '15cm', price: '425.000', priceFirst: '600.000' },
       { size: '10cm', price: '255.000', priceFirst: '360.000' },
@@ -51,5 +89,6 @@ export let monProducts = [
       { color: 'yellow', img: '0-7' },
     ],
     otherImgs: ['0b1'],
+    nocolors: [],
   },
 ]

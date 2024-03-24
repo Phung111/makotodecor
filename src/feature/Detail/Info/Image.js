@@ -15,6 +15,7 @@ export default function Image() {
 
   const colors = product.colors
   const otherImgs = product.otherImgs
+  const nocolors = product.nocolors
 
   const handleSlideClick = (image) => {
     dispatch(setCurrentImage(image))
@@ -46,6 +47,12 @@ export default function Image() {
               colors.map((item, index) => (
                 <SwiperSlide key={index} onClick={() => handleSlideClick(item.img)}>
                   <img src={require(`assets/images/sp/${item.img}.png`)} className="aspect-square w-[94px] cursor-pointer bg-gray object-contain hover:bg-black/20" />
+                </SwiperSlide>
+              ))}
+            {nocolors &&
+              nocolors.map((item, index) => (
+                <SwiperSlide key={index} onClick={() => handleSlideClick(item)}>
+                  <img src={require(`assets/images/sp/${item}.png`)} className="aspect-square w-[94px] cursor-pointer bg-gray object-contain hover:bg-black/20" />
                 </SwiperSlide>
               ))}
           </Swiper>

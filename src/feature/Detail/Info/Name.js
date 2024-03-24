@@ -24,7 +24,7 @@ export default function Name() {
         <div className="flex w-full flex-col gap-4">
           <h1 className="text-2xl font-bold capitalize sm:text-3xl">{product.name}</h1>
           <div className="flex items-center gap-1">
-            <p className="text-sm font-semibold sm:text-base">719</p>
+            <p className="text-sm font-semibold sm:text-base">{product.sold}</p>
             <p className="text-black/70">Sold</p>
           </div>
           <div className="flex h-[66px] items-center gap-2 bg-gray px-5">
