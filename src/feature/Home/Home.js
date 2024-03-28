@@ -6,7 +6,7 @@ import Nav from 'components/Nav'
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col bg-[url('assets/images/b1.jpg')]">
+      <div className="flex flex-col bg-[url('assets/images/b1.jpg')] -sm:bg-contain">
         <div className="contain">
           <div id="head" className="flex flex-col pb-10 sm:pb-20">
             <Nav />
