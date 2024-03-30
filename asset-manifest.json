@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5496426.css",
-    "main.js": "/static/js/main.b799d4f6.js",
+    "main.css": "/static/css/main.3e2d0a23.css",
+    "main.js": "/static/js/main.a9f40abf.js",
     "static/media/3-5.png": "/static/media/3-5.bc624b73099d13fdfc0e.png",
     "static/media/1-2.png": "/static/media/1-2.1e5aeb261e3a03ca783d.png",
     "static/media/1-1.png": "/static/media/1-1.2c2de07e27fc84f7acf1.png",
     "static/media/2-3.png": "/static/media/2-3.335f63d85bc76df265b6.png",
-    "static/media/2.png": "/static/media/2.155a54b5bcda71a67967.png",
+    "static/media/2-5.png": "/static/media/2-5.155a54b5bcda71a67967.png",
     "static/media/1.png": "/static/media/1.570db4041d2629fc91e4.png",
-    "static/media/2-1.png": "/static/media/2-1.a605c6ed539c33128246.png",
+    "static/media/2.png": "/static/media/2.365f0c71954dc99531ed.png",
+    "static/media/2-6.png": "/static/media/2-6.a605c6ed539c33128246.png",
     "static/media/2-2.png": "/static/media/2-2.b70995c66a971e024c63.png",
+    "static/media/2-1.png": "/static/media/2-1.a76c1da551d2b622f0c8.png",
     "static/media/A-OTF-KaishoMCBK1Pro-DeBold.otf": "/static/media/A-OTF-KaishoMCBK1Pro-DeBold.50312517476889e6842e.otf",
     "static/media/1-3.png": "/static/media/1-3.b0aca7f72dc2b5af064b.png",
     "static/media/b1.jpg": "/static/media/b1.44491dde21538dc2b116.jpg",
@@ -90,11 +92,11 @@
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/index.html",
-    "main.c5496426.css.map": "/static/css/main.c5496426.css.map",
-    "main.b799d4f6.js.map": "/static/js/main.b799d4f6.js.map"
+    "main.3e2d0a23.css.map": "/static/css/main.3e2d0a23.css.map",
+    "main.a9f40abf.js.map": "/static/js/main.a9f40abf.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5496426.css",
-    "static/js/main.b799d4f6.js"
+    "static/css/main.3e2d0a23.css",
+    "static/js/main.a9f40abf.js"
   ]
 }
