@@ -33,7 +33,7 @@ export default function Products({}) {
   const [canPrevious, setCanPrevious] = useState(false)
   const [canNext, setCanNext] = useState(true)
 
-  const swipreBtnClass = `relative z-30 h-10 w-10 rounded-full shadow-md sm:transition sm:hover:scale-150 `
+  const swipreBtnClass = `relative z-30 h-[120px] w-[54px] bg-[#f2f2f2] shadow-md sm:transition sm:hover:scale-150 `
   useEffect(() => {
     const bullets = document.querySelectorAll('.swiper-pagination-bullet')
 
@@ -83,10 +83,10 @@ export default function Products({}) {
           </Swiper>
           <div className="absolute left-0 top-0 flex h-full w-full items-center">
             <div className="flex w-full justify-between">
-              <button className={`swiper-button-prev-custom -translate-x-[100%] ${swipreBtnClass} ${!canPrevious ? 'opacity-0' : 'opacity-100'}`}>
+              <button className={`swiper-button-prev-custom -translate-x-[100%] ${swipreBtnClass}`}>
                 <img src={require(`assets/images/button_prev.png`)} alt="button_prev" className="object-contain" />
               </button>
-              <button className={`swiper-button-next-custom translate-x-[100%] ${swipreBtnClass} ${!canNext ? 'opacity-0' : 'opacity-100'}`}>
+              <button className={`swiper-button-next-custom translate-x-[100%] ${swipreBtnClass}`}>
                 <img src={require(`assets/images/button_next.png`)} alt="button_next" className="object-contain" />
               </button>
             </div>
