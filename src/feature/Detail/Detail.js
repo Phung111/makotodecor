@@ -12,7 +12,7 @@ export default function Detail() {
 
   return (
     <>
-      <div className="bg-[url('assets/images/b1.jpg')]">
+      <div className="bg-[url('assets/images/b1.jpg')] -sm:bg-contain">
         <div className="contain px-5">
           <div className="flex flex-col gap-2 sm:gap-5">
             <div className="flex flex-col">
