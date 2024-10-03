@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes, BrowserRouter } from 'react-router-dom'
 
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -32,12 +32,12 @@ function App() {
     <>
       {isLoading && <Loading />}
       {!isLoading && (
-        <HashRouter>
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/detail" element={<Detail />} />
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
       )}
     </>
   )
