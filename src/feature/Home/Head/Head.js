@@ -7,7 +7,7 @@ import Cat from 'components/Cat'
 export default function Head() {
   return (
     <>
-      <div className="flex flex-col items-center gap-5 sm:flex-row">
+      <div id="abc" className="flex flex-col items-center gap-5 sm:flex-row">
         <div className="flex w-full flex-col gap-2 sm:w-1/2">
           <div className="relative flex w-full items-center justify-center">
             <img className="absolute w-full -translate-x-2 object-cover" src={require(`assets/images/cucmau.png`)} alt="cucmau" />
