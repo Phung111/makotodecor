@@ -7,6 +7,7 @@ import { setProduct, setProducts, setLoading } from 'service/baseSlice'
 
 import Home from 'feature/Home/Home'
 import Detail from 'feature/Detail/Detail'
+import Spin from 'feature/Spin'
 import { monProducts } from 'service/sourceProduct'
 
 import Loading from 'components/Loading'
@@ -36,6 +37,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/detail" element={<Detail />} />
+            <Route path="/spin" element={<Spin />} />
           </Routes>
         </BrowserRouter>
       )}
