@@ -1,0 +1,119 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  zoom: 0.8;
+}
+
+@font-face {
+  font-family: 'ImagineryFriend';
+  src: url('assets/fonts/000IMAGINARYFRIENDTEDDYBEAR.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  background-image: url(assets/images/spin/bgpink.png);
+  background-size: cover;
+}
+
+.wheel-wrap {
+  position: relative;
+  transform: scale(0.8);
+}
+
+.flower {
+  position: absolute;
+  top: 345px;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+}
+.marker {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wheel {
+  width: 700px;
+  height: 700px;
+}
+
+.button-wrap {
+  position: relative;
+  transform: scale(0.8);
+  margin-top: -50px;
+}
+
+.button {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.button:active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.disableBtn {
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.blur {
+  animation: blur 100s;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(1.5px);
+  }
+  80% {
+    filter: blur(1.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.display-wrap {
+  position: relative;
+  transform: scale(1.2);
+  margin-top: 20px;
+}
+
+.display {
+  position: absolute;
+  left: 50%;
+  top: 105px;
+  transform: translate(-50%, -50%);
+  color: rgb(60, 32, 32);
+  font-size: 50px;
+  font-family: "ImaginaryFriend", sans-serif;
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  padding-top: 40px;
+  z-index: -1;
+  background-color: antiquewhite;
+}
+
+.border {
+}
+
+@media (max-width: 768px) {
+  #app {
+    zoom: 0.6;
+  }
+}
+
