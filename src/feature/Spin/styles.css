@@ -104,5 +104,9 @@ html {
   #app {
     zoom: 0.6;
   }
+
+  .display {
+    font-size: 30px;
+  }
 }
 
