@@ -22,9 +22,9 @@ const Spin = () => {
     startButton.style.pointerEvents = "none";
     startButton.style.opacity = 0.5;
 
-    // const isSpun = localStorage.getItem("isSpun");
-    // startButton.hidden = isSpun === "true";
-    // disableButton.hidden = isSpun !== "true";
+    const isSpun = localStorage.getItem("isSpun");
+    startButton.hidden = isSpun === "true";
+    disableButton.hidden = isSpun !== "true";
 
     // Promise chờ audio canplaythrough
     const waitForLoad = (audioEl) =>
@@ -115,17 +115,26 @@ const Spin = () => {
     const handleClick = async () => {
       localStorage.setItem("isSpun", "true");
       if (display) display.innerHTML = "";
-
-      // Play spin ngay
+    
+      // Play spin sound
       spinSound.currentTime = 0;
       await spinSound.play().catch(err => console.error("Error playing spin sound", err));
-
-      // Quay bánh ngay lập tức
-      deg = Math.floor(5000 + Math.random() * 5000);
-      wheel.style.transition = "all 5s ease-out";
-      wheel.style.transform = `rotate(${deg}deg)`;
+    
+      // Bước 1: Lùi nhẹ
+      wheel.style.transition = "transform 0.3s ease-out";
+      wheel.style.transform = "rotate(-15deg)";
+    
+      // Vô hiệu hóa nút bấm ngay sau khi click
       startButton.style.pointerEvents = "none";
-    };
+      startButton.style.opacity = 0.5;
+    
+      // Bước 2: Chờ 300ms rồi quay chính
+      setTimeout(() => {
+        deg = Math.floor(5000 + Math.random() * 5000);
+        wheel.style.transition = "all 5s ease-out";
+        wheel.style.transform = `rotate(${deg}deg)`;
+      }, 300);
+    };    
 
     // Khởi tạo các event listeners
     const initializeEventListeners = () => {
@@ -198,7 +207,7 @@ const Spin = () => {
         <img 
           src={require("assets/images/spin/wheel2.png")} 
           alt="wheel" 
-          className="wheel" 
+          className="wheel max-w-none" 
           ref={wheelRef}
         />
         <img 
@@ -229,11 +238,10 @@ const Spin = () => {
   
       <div className="display-wrap">
         <img 
-          src={require("assets/images/spin/border.png")} 
-          alt="border" 
-          className="border" 
-        />
-        <div className="display" ref={displayRef}></div>
+            src={require("assets/images/spin/border.png")} 
+            alt="border"
+          />
+        <div className="display teddy_bear" ref={displayRef}></div>
       </div>
     </div>
   );

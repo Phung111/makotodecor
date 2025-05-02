@@ -5,13 +5,6 @@
   zoom: 0.8;
 }
 
-@font-face {
-  font-family: 'ImagineryFriend';
-  src: url('assets/fonts/000IMAGINARYFRIENDTEDDYBEAR.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body,
 html {
   background-image: url(assets/images/spin/bgpink.png);
@@ -99,16 +92,12 @@ html {
   transform: translate(-50%, -50%);
   color: rgb(60, 32, 32);
   font-size: 50px;
-  font-family: "ImaginaryFriend", sans-serif;
   text-align: center;
   width: 400px;
   height: 100px;
-  padding-top: 40px;
+  padding-top: 20px;
   z-index: -1;
   background-color: antiquewhite;
-}
-
-.border {
 }
 
 @media (max-width: 768px) {
