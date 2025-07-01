@@ -13,12 +13,12 @@ export default function Home() {
             <Head />
           </div>
         </div>
-        <div className="bg-[url('assets/images/b2.png')]">
+        {/* <div className="bg-[url('assets/images/b2.png')]">
           <div className="contain">
             <Body />
           </div>
-        </div>
-        <Foot />
+        </div> */}
+        {/* <Foot /> */}
       </div>
     </>
   )

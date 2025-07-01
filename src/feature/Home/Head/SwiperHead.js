@@ -22,10 +22,10 @@ export default function SwiperHead({}) {
         loop={true}
         className="h-full w-full"
       >
-        <SwiperSlide className="flex items-center justify-center">
+        <SwiperSlide>
           <img src={require(`assets/images/next1.png`)} alt="next1" className="object-contain" />
         </SwiperSlide>
-        <SwiperSlide className="flex items-center justify-center">
+        <SwiperSlide>
           <img src={require(`assets/images/next2.png`)} alt="next2" className="object-contain" />
         </SwiperSlide>
         <SwiperSlide>

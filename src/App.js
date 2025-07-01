@@ -10,6 +10,7 @@ import Detail from 'feature/Detail/Detail'
 import Spin from 'feature/Spin'
 import LandingPage from 'feature/LandingPage'
 import { monProducts } from 'service/sourceProduct'
+import CalculateFabric from './feature/CalculateFabric'
 
 import Loading from 'components/Loading'
 
@@ -40,6 +41,7 @@ function App() {
             <Route path="/detail" element={<Detail />} />
             <Route path="/spin" element={<Spin />} />
             <Route path="/landing-page" element={<LandingPage />} />
+            <Route path="/calculate-fabric" element={<CalculateFabric />} />
           </Routes>
         </BrowserRouter>
       )}
